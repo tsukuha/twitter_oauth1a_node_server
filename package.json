@@ -1,0 +1,17 @@
+{
+  "name": "node_twitter_oauth1a_server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "KokoroKawakami",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "crypto": "^1.0.1",
+    "http": "0.0.1-security",
+    "querystring": "^0.2.1"
+  }
+}
