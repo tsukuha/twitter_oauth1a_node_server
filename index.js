@@ -83,6 +83,12 @@ http.createServer((req, res) => {
       }).finally(() => {
         res.end()
       })
+    } else if (reqURI && reqURI.includes('denied')) {
+      res.writeHead(302, {
+        'Location': '<Client URL>',
+      })
+      res.write('redirect!')
+      res.end()
     } else {
       res.writeHead(408, {
         'Content-Type': 'application/json'
